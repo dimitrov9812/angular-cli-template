@@ -1,9 +1,15 @@
-<div style="display: flex; flex-direction: column; align-items: center;">
+<div style="display: flex; flex-direction: column; align-items: center; margin: 20px">
     <h2>Two Way Binding Example</h2>
     <h6>Press enter to see the changed email</h6>
-    <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center; margin:10px">
         <input placeholder="enter your email" [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
         <h6 style="padding: 5px; padding-top: 10px; color: grey;" (click)="clearEmail()">x</h6>
     </div>
-    <h6>Add explanation here</h6>
+    <div style="width: 90%;">
+        <h6 style="text-align: center;">
+            Here we practiced using two way binding. This is binding between the parent and child component which listens for
+            event and updates values simultaneously between them. It uses the <span style="font-weight: bold;">ngModel</span> which has a specific syntax.
+            The syntax is: <span style="font-weight: bold;">[(ngModel)]="value-we-want-to-bind-and-update"</span>
+        </h6>
+    </div>
 </div> 

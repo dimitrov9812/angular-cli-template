@@ -8,7 +8,29 @@
         <h6>Rating: {{ detailedMovie.rating | number }}</h6>
         <h6>Price: {{ detailedMovie.price | currency: "BGN":true:'3.2-2' }}</h6>
     </div>
-    <div>
-        <h6>Add explanation</h6>
+    <div style="width: 90%;">
+        <h6 style="text-align: center;">
+            Using pipes in Angular saves a lot of time and effort. It has very easy to use and get familiar with syntax.
+            The pipes can be.
+        </h6>
+        <ul>
+            <li>uppercase</li>
+            <li>lowercase</li>
+            <li>date</li>
+            <li>currency</li>
+            <li>custom pipes</li>
+        </ul>
+        <h6 style="text-align: center;">
+            For example the title above is a string and it uses the uppercase pipe to make all the letter uppercase.
+            The syntax for doing it is: <span style="font-weight: bold;">title | uppercase</span>.
+        </h6>
+        <h6 style="text-align: center;">
+            We can also provide the pipe with parameters to it. For example we added parameters to the currency and to the date to format it even more.
+            The parameters can be passed after adding a colon.
+            Example: <span style="font-weight: bold;">data: "mediumDate"</span>
+            To see what types of parameters can be passed we should read the documentation.
+            And for the currency we format it to <span style="font-weight: bold;">currency: "BGN":true:3.2-2</span> which formats the currency to bulgarian
+            leva and formats it also to the second digit after the dot.
+        </h6>
     </div>
 </div>

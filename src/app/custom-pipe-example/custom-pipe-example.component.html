@@ -1,8 +1,22 @@
 <div style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
     <h2>Custom Pipe Example</h2>
-    <div style="display: flex; flex-direction: row; justify-content:center; align-items: center;">
+    <div style="display: flex; flex-direction: row; justify-content:center; align-items: center; margin: 10px;">
         <input placeholder="enter text length to display" [(ngModel)]="length" (keyup.enter)="onKeyUp()" />
         <h6 (click)="resetLength()" style="color: grey; padding: 10px; padding-top: 15px;">x</h6>
     </div>
     <h3>{{ longText | summary: length}}</h3>
+    <div style="width: 90%; margin: 10px;">
+        <h6 style="text-align: center;">
+            In Angular we can also create custom pipes for specific cases of ours. This can be done by creating a pipe class.
+            We give it the decorator <span style="font-weight: bold;">@Pipe</span> and after that we define the class which implemets <span style="font-weight: bold;">PipeTransform</span>
+        </h6>
+        <h6 style="text-align: center;">
+            After that we must specify the conditions in our transform method which is provided by PipeTransform and in order for the pipe to work we must use it.
+            There we specify our conditions. We specify if the function will do additional formatting by arguments passed and apply that in the body of the function.
+        </h6>
+        <h6 style="text-align: center;">
+            In our case we've created a pipe for shortening log text to a specific length passed by the user and apply <span style="font-weight: bold;">...</span>
+            in the end.
+        </h6>
+    </div>
 </div>
