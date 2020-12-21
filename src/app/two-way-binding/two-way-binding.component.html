@@ -1,0 +1,9 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h2>Two Way Binding Example</h2>
+    <h6>Press enter to see the changed email</h6>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <input placeholder="enter your email" [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
+        <h6 style="padding: 5px; padding-top: 10px; color: grey;" (click)="clearEmail()">x</h6>
+    </div>
+    <h6>Add explanation here</h6>
+</div> 

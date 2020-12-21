@@ -8,13 +8,21 @@ import { MovieComponent } from './movie/movie.component';
 import { MoviesService } from './movies.service';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './summary.pipe';
+import { BootstrapExampleComponent } from './bootstrap-example/bootstrap-example.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { PipeExampleComponent } from './pipe-example/pipe-example.component';
+import { CustomPipeExampleComponent } from './custom-pipe-example/custom-pipe-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MovieComponent,
-    SummaryPipe
+    SummaryPipe,
+    BootstrapExampleComponent,
+    TwoWayBindingComponent,
+    PipeExampleComponent,
+    CustomPipeExampleComponent
   ],
   imports: [
     BrowserModule,

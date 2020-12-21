@@ -1,0 +1,14 @@
+<div style="display: flex; flex-direction: column; align-items: center; margin: 20px;">
+    <h2>Pipe Example</h2>
+    <div style="border: 1px solid lightgrey; padding: 10px; margin: 5px">
+        <h4>{{ detailedMovie.title | uppercase }}</h4>
+        <h6>Year: {{ detailedMovie.year}}</h6>
+        <h6>Iron Man actor: {{ detailedMovie.mainActor }}</h6>
+        <h6>Release Date: {{ detailedMovie.releaseDate | date: "mediumDate" }}</h6>
+        <h6>Rating: {{ detailedMovie.rating | number }}</h6>
+        <h6>Price: {{ detailedMovie.price | currency: "BGN":true:'3.2-2' }}</h6>
+    </div>
+    <div>
+        <h6>Add explanation</h6>
+    </div>
+</div>
