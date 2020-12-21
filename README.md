@@ -6,22 +6,22 @@ This project is a single page app without any complex functionallity. It's purpo
  I separate each new thing I learn into it's own div with heading and content
  It looks like this:
 
- Markup : * Div
-              * Title
-              * Content
-              * Explanaiton of what i've learned
+* Div
+    * Title
+    * Content
+    * Explanaiton of what i've learned
 
 The things I've learned and tried so far:
 
 
- Markup : * Directives in Angular
-          * Integrating Bootstrap
-          * Two Way Binding
-          * Pipe
-            * Creating a custom Pipe
-          * CLI Generating
-            * Components
-            * Services
+* Directives in Angular
+* Integrating Bootstrap
+* Two Way Binding
+* Pipe
+    * Creating a custom Pipe
+* CLI Generating
+    * Components
+    * Services
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
